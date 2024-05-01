@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        background-color: #212121;
+        width: 100%;
+    }
+
+    header {
+        padding-top: 30px;
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .instruction {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 45px;
+    }
+
+    .instruction__link {
+        color: rgb(255, 255, 255);
+        font-family: Helvetica;
+        font-size: 15.67px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .instruction__link:hover {
+        text-decoration: underline;
+    }
+
+    .info {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .info__packeta {
+        height: 174px;
+        border-radius: 4.75px;
+        background: rgb(0, 0, 0);
+        padding: 30px 0 0 20px;
+        margin-bottom: 15px;
+    }
+
+    .info__packeta-descr {
+        color: rgb(255, 255, 255);
+        font-family: Helvetica;
+        font-size: 13.67px;
+        font-weight: 400;
+    }
+
+    .info__scan {
+        height: 174px;
+        border-radius: 4.75px;
+        background: url('../img/dev-studio-scan.jpg') no-repeat 50%/cover;
+        padding: 25px 0 0 25px;
+        margin-bottom: 15px;
+    }
+
+    .info__scan-descr {
+        color: rgb(255, 255, 255);
+        font-family: Helvetica;
+        font-size: 13.67px;
+        font-weight: 400;
+    }
+
+    .info__development {
+        height: 174px;
+        border-radius: 4.75px;
+        background: url('../img/development.jpeg') no-repeat 50%/cover;
+        padding: 25px 0 0 25px;
+        margin-bottom: 15px;
+    }
+
+    .info__development-descr {
+        color: rgb(255, 255, 255);
+        font-family: Helvetica;
+        font-size: 14.45px;
+        font-weight: 400;
+    }
+
+    .info__eco {
+        height: 174px;
+        border-radius: 4.75px;
+        margin-bottom: 15px;
+        background-color: #DBDBDB;
+        display: flex;
+    }
+
+    .info__eco-descr {
+        color: rgb(61, 137, 62);
+        font-family: Helvetica;
+        font-size: 14.67px;
+        font-weight: 400;
+        margin-left: 25px;
+        padding-top: 20px;
+    }
+
+    .info__digital {
+        height: 174px;
+        border-radius: 4.75px;
+        margin-bottom: 15px;
+        background-color: #DBDBDB;
+        display: flex;
+        padding: 35px 0 0 50px;
+    }
+
+    .info__digital-descr {
+        color: rgb(61, 137, 62);
+        font-family: Helvetica;
+        font-size: 14.67px;
+        font-weight: 400;
+        margin-left: 35px;
+        padding-top: 20px;
+    }
+
+    .scrollElem {
+        height: 55px;
+        background: rgb(0, 0, 0);
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .scroll-btn {
+        width: 161.79px;
+        height: 42px;
+        border-radius: 0.79px;
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-family: Helvetica;
+        font-size: 17.26px;
+        font-weight: 700;
+        margin-right: 27px;
+    }
+}
+
+
+
+.header {
+    padding: 20px;
+    text-align: center; 
+    background-color: #333;
+    color: white;
+}
+
+.content {
+    padding: 20px;
+}
+
+form {
+    margin-top: 15px;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.options span {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.input-field {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.submit-block {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d6d6d6;
+    height: 50px;
+}
+
+.button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    width: 100px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #398fe5;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #0e4276; 
+    transform: scale(0.95);
+    transition: background-color 0.1s ease;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Анимация появления содержимого */
+@keyframes slideIn {
+    from {top: -300px; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+
+/* Анимация исчезновения содержимого */
+@keyframes slideOut {
+    from {top: 0; opacity: 1;}
+    to {top: -300px; opacity: 0;}
+}
