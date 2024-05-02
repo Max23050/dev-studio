@@ -41,10 +41,41 @@ body {
         text-decoration: underline;
     }
 
+    .instruction__elem {
+        border-radius: 1.39px;
+        background: rgb(240, 240, 240); 
+        height: 139.59px;
+        margin-bottom: 16px;
+        display: flex;
+        padding-left: 15px;
+    }
+
+    .instruction__elem-num {
+        color: rgb(0, 0, 0);
+        font-family: Helvetica Neue;
+        font-size: 78.41px;
+        font-weight: 200;
+    }
+
+    .instruction__elem-descr {
+        color: rgb(0, 0, 0);
+        font-family: Helvetica;
+        font-size: 14.85px;
+        font-weight: 400;
+        padding-top: 28px;
+        margin-left: 19px;
+        padding-top: 28px;
+    }
+
+    .container-instruction {
+        padding-bottom: 30px;
+    }
+
     .info {
         width: 85%;
         margin: 0 auto;
         padding-top: 30px;
+        padding-bottom: 50px;
     }
 
     .info__packeta {
