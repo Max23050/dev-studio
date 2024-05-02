@@ -72,6 +72,60 @@ body {
         padding-bottom: 30px;
     }
 
+    #film-form {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .data-wrapper {
+        margin-top: 25px;
+        border-radius: 0.79px;
+        background: rgb(0, 0, 0);   
+        height: 137.29px;
+        padding: 0 0 0 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .data-wrapper input {
+        border: none;
+        border-radius: 1.59px;
+        background: rgb(71, 71, 71);
+        width: 70%;
+        height: 33.53px;
+        margin-right: 20px;
+    }
+
+    .data-wrapper label {
+        color: rgb(255, 255, 255);
+        font-family: Helvetica;
+        font-size: 11.89px;
+        font-weight: 400;
+    }
+
+    .options-block {
+        margin-top: 15px;
+        border-radius: 0.79px;
+        background: rgb(0, 0, 0);
+        height: 197.21px;
+        padding-left: 20px;
+        padding-top: 28px;
+    }
+
+    .options-descr {
+        color: rgb(255, 255, 255);
+        font-family: Helvetica;
+        font-size: 14.68px;
+        font-weight: 400;
+    }
+
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .info {
         width: 85%;
         margin: 0 auto;
@@ -183,6 +237,20 @@ body {
         font-weight: 700;
         margin-right: 27px;
     }
+
+    .additional {
+        padding-top: 20px;
+        padding-left: 16px;
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    .additional__descr {
+        color: rgb(220, 220, 220);
+        font-family: Helvetica;
+        font-size: 11.89px;
+        font-weight: 400;
+    }
 }
 
 
@@ -194,17 +262,23 @@ body {
     color: white;
 }
 
-.content {
-    padding: 20px;
+
+
+.options {
+    margin-top: 28px;
 }
 
-form {
-    margin-top: 15px;
-}
 
 .options label {
     display: block;
-    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 11.89px;
+    font-weight: 400;
+}
+
+.options label:nth-child(2) {
+    margin-top: 36px;
 }
 
 .options input[type="radio"] {
@@ -229,26 +303,30 @@ form {
 }
 
 .submit-block {
-    margin-top: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: #d6d6d6;
-    height: 50px;
+    padding: 0 22px 0 30px;
+}
+
+.price {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 18.44px;
+    font-weight: 400;
 }
 
 .button {
-    background-color: #222;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
+    width: 163.09px;
+    height: 40.08px;
+    border-radius: 0.79px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 18.3px;
+    font-weight: 700;
     display: block;
-    width: 100px;
     cursor: pointer;
-    box-sizing: border-box;
-    border-radius: 15px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .button:hover {
