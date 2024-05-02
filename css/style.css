@@ -48,6 +48,7 @@ body {
         margin-bottom: 16px;
         display: flex;
         padding-left: 15px;
+        padding-top: 5px;
     }
 
     .instruction__elem-num {
