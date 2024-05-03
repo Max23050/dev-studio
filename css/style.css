@@ -126,6 +126,10 @@ body {
         justify-content: space-between;
     }
 
+    .input-wrapper input {
+        color: white;
+    }
+
     .info {
         width: 85%;
         margin: 0 auto;
