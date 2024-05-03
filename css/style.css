@@ -255,6 +255,11 @@ body {
         font-size: 11.89px;
         font-weight: 400;
     }
+
+    .additional__descr a {
+        color: rgb(220, 220, 220);
+        text-decoration: none;         
+    }
 }
 
 
