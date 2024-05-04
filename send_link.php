@@ -32,7 +32,7 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'maxtaran708@gmail.com';                 // Наш логин
-$mail->Password = 'xtuwlcuxtwvmwpzd';                           // Наш пароль от ящика
+$mail->Password = '';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 
@@ -205,7 +205,7 @@ $mail->Body    = '
             Za celej tým děkujem, že s náma fotíš < 3
         </div>
         <div class="mail-inst-wrapper">
-            <a href="#">
+            <a href="https://www.instagram.com/shoot_frames/">
                 <img src="https://www.dropbox.com/scl/fi/tqmot0j7dwmpwmpc33h1r/inst-icon.png?rlkey=mzmrj09rer38gh6v9ng0rx0j2&raw=1" alt="inst" class="mail-inst-icon" style="width: 20px; height: 20px; margin-top: 4px;">
                 <div class="mail-inst-link">
                     @shoot_frames
